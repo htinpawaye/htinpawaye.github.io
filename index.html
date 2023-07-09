@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+        body {
+            background-color: coral;
+        }
+        
+        .content {
+            background-color: #fff;
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 8%;
+            border-radius: 8px;
+            box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.4);
+        }
+        
+        .title {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: rgb(128, 57, 24);
+        }
+        
+        label {
+            display: block;
+            margin: 20px 20px 5px 20px;
+        }
+        
+        .user_input {
+            width: 300px;
+            padding: 10px 15px;
+            margin: 0px 20px;
+            border: 1px solid rgb(128, 57, 24);
+            border-radius: 5px;
+        }
+        
+        button {
+            width: 80%;
+            height: 30px;
+            margin: 20px 30px;
+            color: white;
+            background-color: rgb(128, 57, 24);
+            border: none;
+            border-radius: 5px;
+        }
+        
+        .result {
+            text-align: end;
+            padding: 20px 10px;
+            font-size: 20px;
+            background-color: rgb(161, 66, 21);
+            color: #fff;
+            margin: 0px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Simple Calculator</h1>
+    <p>Enter First Number</p>
+    <input type="text" name="" id="firstNum" />
+
+    <p>Enter Second Number</p>
+    <input type="text" name="" id="secNum" />
+
+    <p>Enter Operator</p>
+    <input type="text" name="" id="operator" />
+
+    <br /><br />
+
+    <button id="claculateBtn">Calculate</button>
+    <p>The result is <span id="result"></span></p> -->
+    <div class="content">
+        <div class="title">Calculator Project</div>
+        <div class="result" id="result">
+            0
+        </div>
+        <div class="input_group">
+            <div class="input_group">
+                <label for="">Number One :</label>
+                <input type="number" id="firstNum" class="user_input" placeholder="Enter First Number......." />
+            </div>
+            <div class="input_group">
+                <label for="">Number Two :</label>
+                <input type="number" id="secNum" class="user_input" placeholder="Enter Second Number......." />
+            </div>
+            <div class="input_group">
+                <label for="">Operators :</label>
+                <input type="text" name="" id="operator" class="user_input" placeholder="Enter operator......">
+            </div>
+            <div class="button_group">
+                <button type="button" id="calculateBtn" class="register-btn">Calculate</button>
+            </div>
+
+        </div>
+
+        <script src="./script.js"></script>
+</body>
+
+</html>
